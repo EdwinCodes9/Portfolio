@@ -56,18 +56,24 @@ $(() =>{
 
     const dropDownResume = () =>{
         $resume.slideToggle(2500)
+        $about.slideUp(2500)
+        $port.slideUp(2500)
     }
 
     $dropResume.on('click', dropDownResume)
 
     const dropDownAbout = () =>{
         $about.slideToggle(2500)
+        $resume.slideUp(2500)
+        $port.slideUp(2500)
     }
 
     $dropAbt.on('click', dropDownAbout)
 
     const dropDownPort = () =>{
         $port.slideToggle(2500)
+        $resume.slideUp(2500)
+        $about.slideUp(2500)
     }
 
     $dropPort.on('click', dropDownPort)
