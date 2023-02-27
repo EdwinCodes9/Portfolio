@@ -184,6 +184,7 @@ a{
 
 .my-imgs img:first-of-type{
 	display: block;
+    max-width: 100%;
 }
 
 .spans{
