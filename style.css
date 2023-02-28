@@ -1,202 +1,216 @@
 
 
-.daddy-container{
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap');
+
+
+.daddy-container {
     width: 100%;
+    background-color: #122832;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
 }
 
-.name{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 150px;
-    background-color: navy;
+button {
+    background-color: #122832;
+    color: #08e8de;
+    border-color: #08e8de;
+    width: 70px;
+    height: 40px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.contact {
+    width: 80px;
+    height: 50px;
+    margin-left: 90%;
+}
+
+.picture {
+    width: 320px;
+    height: 320px;
+    border: solid white 1px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+.line {
+    margin-left: 10px;
+    height: 320px;
+    width: 2px;
+    background-color: white;
+}
+
+.welcome {
+    width: 60%;
+    height: 320px;
+    margin-left: 15px;
+}
+
+h3 {
+    font-family: 'Roboto Mono', monospace;
+    color: #08e8de;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
     color: white;
 }
 
-h1{
-    margin-top: 50px;
-    font-size: 50px;
+h2 {
+    font-family: 'Oswald', sans-serif;
+    color: lightgray;
 }
 
-.about-me{
+p {
+    font-family: 'Gajraj One', cursive;
+    font-size: large;
+}
+
+.about {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 100px;
-    background-color: white;
-    color: navy;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 30px;
+    margin-left: 20px;
+    border: #08e8de solid 2px;
+    margin-top: 40px;
 }
 
-h2{
-    margin-top: 30px;
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 30px;
+    margin-left: 20px;
+    border: #08e8de solid 2px;
+    margin-top: 40px;
+}
+
+.portfolio h1 {
+    padding: 5px;
+}
+
+.resume {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 30px;
+    margin-left: 20px;
+    border: #08e8de solid 2px;
+    margin-top: 40px;
+}
+
+.resume h1 {
+    padding: 5px;
+}
+
+.about2 {
+    margin-top: 40px;
+    width: 60%;
+    padding-left: 10px;
+    display: block;
+}
+
+.about2 p {
+    font-family: 'Roboto Mono', monospace;
+    color: #08e8de;
     font-size: 30px;
 }
 
-.portfolio{
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    height: 100px;
-    background-color: #187bcd;
-    color: navy;
+.resume2 {
+    margin-top: 40px;
+    width: 60%;
+    padding-left: 10px;
+    display: none;
+}
+
+.resume2 p {
+    font-family: 'Roboto Mono', monospace;
+    color: #08e8de;
+    font-size: 30px;
 }
 
 .portfolio2{
+    width: 70%;
+    margin-top: 40px;
+    padding-left: 10px;
     display: none;
-    background-color: #187bcd;
-    color:navy;
-    border: 2px solid white;
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-weight: bold;
 }
-
-.resume{
+.portfolio3 {
     display: flex;
-    justify-content: space-around;
     width: 100%;
-    height: 100px;
-    background-color: #d0efff;
-    color: #1167b1;
+    height: 100%;
+    border: white 2px solid;
 }
 
-button{
-    font-size: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    color: white;
-    background-color: navy;
-    border-radius: 12px;
-
-}
-
-p{
-    text-align: center;
-}
-
-.about-me2{
-    display: none;
-    border: 2px solid navy;
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-weight: bold;
-}
-h3{
-    text-align: center;
-}
-h4{
-    text-align: center;
-}
-
-.resume2{
-    width: 100%;
-    display: none;
-    border: 2px solid navy;
-    margin-bottom: 10px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.open-socials{
+.left {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    width: 10%;
+    height: 100%;
 }
 
-#social-modal {
-    display: none;
-    background-color: rgba(0,0,128,0.6);
-    position: fixed;
-    top: 0;
-    left: 0;
+.p1 {
     height: 100%;
     width: 100%;
-    z-index: 1;
-    overflow: auto;
+    display: block;
 }
 
-#social-textbox {
-    background-color: white;
-    height: 300px;
-    width: 700px;
-    border-radius: 2px;
-    margin: 150px auto;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+.p1 p{
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    color: #08e8de;
+    font-size: 25px;
 }
 
-.inside{
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 10%;
+    height: 100%;
+}
+
+
+.material-symbols-outlined {
+    margin-left: auto;
+    margin-right: auto;
+    color: #08e8de;
+    font-variation-settings:
+        'FILL' 6,
+        'wght' 700,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+.p2 {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.p2 p{
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    color: #08e8de;
+    font-size: 100px;
+}
+
+.son{
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    width: 100%;
-    height: 70%;
+
 }
 
- .linkedinpic{
-    width: 45%;
-    height: 130px;
-    margin-top: 35px;
-    border-radius: 50%;
-} 
-
-.githubpic{
-    width: 48%;
-    height: 180px;
-    margin-top: 10px;
-    border-radius: 50%;
-}
-
-a{
-    display: flex;
-    justify-content: center;
-    width: 45%;
-    height: 180px;
-    margin-top: 10px;
-    border-radius: 50%; 
-}
-
-.carousel{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 330px;
-}
-
-.my-imgs{
-    display: flex;
-    justify-content: space-around;
-    width: 306px;
-	padding: 10px;
-	border-radius: 10px;
-	box-sizing: border-box;
-}
-
-.my-imgs img{
-    width: 300px;
-    height: 300px;
-	border-radius: 15px;
-	display: none;
-    border: 3px solid black;
-}
-
-.my-imgs img:first-of-type{
-	display: block;
-    max-width: 100%;
-}
-
-.spans{
-    align-self: center;
-	background: navy;
-	color: white;
-	padding: 10px;
-	border-radius: 50%;
-	text-align: center;
-	box-shadow: 1px 1px #fa8d8e;
-}
-
-#close-social{
-    margin-left: 45%;
+.my-projects{
+    width: 80%;
 }

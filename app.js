@@ -1,84 +1,60 @@
 
 
-$(() =>{
+$(() => {
+    const $pushAbt = $('.about')
+    const $slideAbt = $('.about2')
 
-    const $socialButton = $('#Id-btn')
-    const $popup = $('#social-modal')
-    const $closeSBtn = $('#close-social')
+    const $pushPort = $('.portfolio')
+    const $slidePort = $('.portfolio2')
 
-    const displayModal = () =>{
-        $popup.css('display', 'block')
+    const $pushResume = $('.resume')
+    const $slideResume = $('.resume2')
+
+    const showPort = () => {
+        $slidePort.slideToggle(2500)
+        $slideAbt.slideUp(2500)
+        $slideResume.slideUp(2500)
     }
-    $socialButton.on('click', displayModal)
-    const reverseModal = () =>{
-        $popup.css('display', 'none')
-    }
-    $closeSBtn.on('click', reverseModal)
 
-    let currentImgIndex = 0
-    const numOfImages = $('.my-imgs').children().length - 1
+    $pushPort.on('click', showPort)
+
+    const showAbt = () => {
+        $slideAbt.slideToggle(2500)
+        $slidePort.slideUp(2500)
+        $slideResume.slideUp(2500)
+    }
+    $pushAbt.on('click', showAbt)
+
+    const showResume = () =>{
+        $slideResume.slideToggle(2500)
+        $slideAbt.slideUp(2500)
+        $slidePort.slideUp(2500)
+    }
+
+    $pushResume.on('click', showResume)
+
+    let currentNumDiv = 0
+    const numOfDivs = $('.my-projects').children().length-1
 
     $('#next').on('click', () => {
-        $('.my-imgs').children().eq(currentImgIndex).css('display', 'none')
-
-        if (currentImgIndex < numOfImages) {
-            currentImgIndex++
-        } else {
-            currentImgIndex = 0
+        $('.my-projects').children().eq(currentNumDiv).css('display', 'none')
+        if(currentNumDiv < numOfDivs){
+            currentNumDiv++
+        }else{
+            currentNumDiv = 0
         }
-
-        $('.my-imgs').children().eq(currentImgIndex).css('display', 'block')
+        $('.my-projects').children().eq(currentNumDiv).css('display', 'block')
     })
 
-
-    $('#prev').on('click', () => {
-        $('.my-imgs').children().eq(currentImgIndex).css('display', 'none')
-
-        if (currentImgIndex > 0) {
-            currentImgIndex--
-        } else {
-            currentImgIndex = numOfImages
+    $('#previous').on('click', () => {
+        $('.my-projects').children().eq(currentNumDiv).css('display', 'none')
+        if(currentNumDiv > 0){
+            currentNumDiv--
+        }else{
+            currentNumDiv = numOfDivs
         }
-
-        $('.my-imgs').children().eq(currentImgIndex).css('display', 'block')   
+        $('.my-projects').children().eq(currentNumDiv).css('display', 'block')
     })
-
-    const $dropAbt = $('#slide-about')
-    const $about = $('.about-me2')
-
-
-    const $dropPort = $('#slide-portfolio')
-    const $port = $('.portfolio2')
-
-
-    const $dropResume = $('#slide-resume')
-    const $resume = $('.resume2')
-
-    const dropDownResume = () =>{
-        $resume.slideToggle(2500)
-        $about.slideUp(2500)
-        $port.slideUp(2500)
-    }
-
-    $dropResume.on('click', dropDownResume)
-
-    const dropDownAbout = () =>{
-        $about.slideToggle(2500)
-        $resume.slideUp(2500)
-        $port.slideUp(2500)
-    }
-
-    $dropAbt.on('click', dropDownAbout)
-
-    const dropDownPort = () =>{
-        $port.slideToggle(2500)
-        $resume.slideUp(2500)
-        $about.slideUp(2500)
-    }
-
-    $dropPort.on('click', dropDownPort)
-
-
 
 
 
