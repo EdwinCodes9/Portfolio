@@ -56,6 +56,20 @@ $(() => {
         $('.my-projects').children().eq(currentNumDiv).css('display', 'block')
     })
 
+    const $openModalBtn = $('#open')
+    const $showModal = $('#modal')
+    const $closeModal = $('#close')
+
+    const openModal = () =>{
+        $showModal.css('display', 'block')
+    }
+
+    const closeModal = () =>{
+        $showModal.css('display', 'none')
+    }
+
+    $openModalBtn.on('click', openModal)
+    $closeModal.on('click', closeModal)
 
 
 })
