@@ -1,12 +1,7 @@
 # Project_1_EdwinR
 
-//1.I started by setting up a very simple HTML Layout importing my jquery, js, style sheet.
+The portfolio project that I built using jQuery and HTML showcases my front-end development skills, and includes a variety of dynamic features. One of the core functionalities of the project is the use of jQuery to toggle CSS color classes on certain elements. By clicking on a button or hovering over an item, the user can trigger changes in the color scheme, which adds a visually engaging element to the design.
 
-//2.Once I was satisfied I uploaded just my basic html layout with css styling to netlify to avoid any issues once I started my jquery and js 
+In addition to this dynamic feature, the portfolio project also includes a basic scroll HTML layout, which enables the user to navigate easily through the content. The layout is clean and modern, with a simple color palette that draws attention to the portfolio pieces and highlights the key information about my skills and experience.
 
-//3.Once I had everything in place I started my js and jquery 
-
-//4. I only wanted 3 points off interaction to essentially meet  the requirements.I chose a modal, toogle function that I used to show and hide my divs and a couresel that shows different divs in my portfolio div.
-
-
-//5.For my slideToggle I use the MDN website as a refrence and tutorial, for the couresel I refrenced the corgi lesson which made it extremely easy to create a couresel that suits my needs, and for the modal I refrenced the modal lesson. 
+Overall, this portfolio project is an excellent example of my abilities as a front-end developer, and demonstrates my proficiency with jQuery, HTML, and CSS. Through its use of dynamic features and responsive design, the project showcases my creativity and attention to detail, and provides an engaging and user-friendly experience for visitors to my site.
